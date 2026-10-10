@@ -113,10 +113,8 @@ bash
     Chapra, S. C., & Canale, R. P. (2015). Métodos Numéricos para Ingenieros (7a ed.). McGraw-Hill.
 
     Documentación oficial de Docker: https://docs.docker.com/
-
-    Documentación oficial de GNU Octave: https://octave.org/
-
-    Documentación oficial de NumPy, SciPy y Matplotlib: https://numpy.org/, https://scipy.org/, https://matplotlib.org/
+    
+    Burden, R. L., & Faires, J. D. (2011). Análisis Numérico (9a ed.). Cengage Learning.
     
 ### docker compose up -d --build terminado
 
