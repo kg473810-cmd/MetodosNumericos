@@ -215,6 +215,26 @@ def graficar(resultados, carpeta="img"):
     # Funciones útiles: plt.figure, plt.plot, plt.semilogy, plt.axhline,
     # plt.xlabel, plt.ylabel, plt.title, plt.legend, plt.grid, plt.savefig y
     # plt.close. Guarde con plt.savefig(os.path.join(carpeta, "funcion.png")).
+    A = 12.0;  B = 16.0;   % intervalo de los métodos cerrados
+X0 = 12.5;             % inicio de los métodos abiertos
+DELTA = 0.05;          % incremento de la secante modificada
+TOL = 0.5;             % tolerancia: ea en %
+NMAX = 50;             % máximo de iteraciones
+
+printf('Práctica 2 · Raíces de ecuaciones no lineales · Octave\n');
+printf('%s\n', descripcion());
+printf('Tolerancia: ea <= %g %%, máximo %d iteraciones\n\n', TOL, NMAX);
+
+r(1) = biseccion(A, B, TOL, NMAX);
+r(2) = falsa_posicion(A, B, TOL, NMAX);
+r(3) = punto_fijo(X0, TOL, NMAX);
+r(4) = newton(X0, TOL, NMAX);
+r(5) = secante_modificada(X0, DELTA, TOL, NMAX);
+
+nombres = {'Bisección', 'Falsa posición', 'Punto fijo', 'Newton-Raphson', 'Secante modificada'};
+printf('Resumen\n');
+printf('            x  iter.     ea (%%)            f(x)   método\n');
+
     print("graficar(): falta completar; todavía no se generan las figuras.")
 
 
